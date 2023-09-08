@@ -1,0 +1,10 @@
+query getAllLogs {
+    logs {
+        id
+        message
+        player {
+            name
+        }
+        attributes
+    }
+}

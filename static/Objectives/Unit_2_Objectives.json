@@ -1,0 +1,293 @@
+[
+    {
+        "id": "T.1",
+        "objective": "",
+        "location": [0,0]
+    },
+    {
+        "id": "T.2",
+        "objective": "",
+        "location": [0,0]
+    },
+    {
+        "id": "T.3",
+        "objective": "Drop the item in the hopper with 'Q'",
+        "location": [0,0]
+    },
+    {
+        "id": "T.4",
+        "objective": "",
+        "location": [0,0]
+    },
+    {
+        "id": "T.5",
+        "objective": "Use the contraption builder to make a stick recipe, place redstone in the middle to create",
+        "location": [0,0]
+    },
+    {
+        "id": "T.6",
+        "objective": "",
+        "location": [0,0]
+    },
+    {
+        "id": "T.7",
+        "objective": "Place the contraption block in the item frame",
+        "location": [0,0]
+    },
+    {
+        "id": "T.8",
+        "objective": "",
+        "location": [0,0]
+    },
+    {
+        "id": "T.9",
+        "objective": "Use the conveyor belt, then move to the next room when ready",
+        "location": [0,0]
+    },
+    {
+        "id": "T.10",
+        "objective": "",
+        "location": [0,0]
+    },
+    {
+        "id": "T.11",
+        "objective": "Follow the instructions to make the recycler and recycle some oak planks",
+        "location": [0,0]
+    },
+    {
+        "id": "T.12",
+        "objective": "",
+        "location": [0,0]
+    },
+    {
+        "id": "2.0",
+        "objective": "Talk with Victoria",
+        "location": [130,-870]
+    },
+    {
+        "id": "2.1",
+        "objective": "Talk with Victoria",
+        "location": [130,-870]
+    },
+    {
+        "id": "2.2",
+        "objective": "Place the two most important resources in the chest",
+        "location": [122,-877]
+    },
+    {
+        "id": "2.3",
+        "objective": "Place the two most important resources in the chest",
+        "location": [128,-844]
+    },
+    {
+        "id": "2.4",
+        "objective": "Talk with Victoria",
+        "location": [130,-870]
+    },
+    {
+        "id": "3.0",
+        "objective": "Talk with Santiago",
+        "location": [150,-840]
+    },
+    {
+        "id": "3.1",
+        "objective": "Talk with Zion",
+        "location": [131,-822]
+    },
+    {
+        "id": "3.1.1",
+        "objective": "Build the recycler and recycle wood planks, talk to Zion for help",
+        "location": [131,-822]
+    },
+    {
+        "id": "3.2",
+        "objective": "Talk with Santiago",
+        "location": [150,-840]
+    },
+    {
+        "id": "3.2.1",
+        "objective": "Investigate the contraptions then talk to Santiago",
+        "location": [150,-840]
+    },
+    {
+        "id": "3.2.2",
+        "objective": "Investigate the contraptions then talk to Santiago",
+        "location": [150,-840]
+    },
+    {
+        "id": "3.2.3",
+        "objective": "Investigate the contraptions then talk to Santiago",
+        "location": [150,-840]
+    },
+    {
+        "id": "3.3",
+        "objective": "Place the least efficient contraption(s) in the chest",
+        "location": [150,-840]
+    },
+    
+    {
+        "id": "3.4",
+        "objective": "Talk with Santiago",
+        "location": [150,-840]
+    },
+    {
+        "id": "4.0",
+        "objective": "Talk with Victoria",
+        "location": [128,-844]
+    },
+    {
+        "id": "4.1",
+        "objective": "Talk with Zion",
+        "location": [131,-822]
+    },
+    {
+        "id": "4.2",
+        "objective": "Craft the seven dyes listed in the book",
+        "location": [131,-822]
+    },
+    {
+        "id": "4.3",
+        "objective": "Talk with Zion",
+        "location": [131,-822]
+    },
+    {
+        "id": "4.4",
+        "objective": "Talk with Santiago",
+        "location": [150,-840]
+    },
+    {
+        "id": "4.5",
+        "objective": "Place 3 contraptions in the chest",
+        "location": [150,-840]
+    },
+    {
+        "id": "4.6",
+        "objective": "Talk with Santiago",
+        "location": [150,-840]
+    },
+    {
+        "id": "4.7",
+        "objective": "Talk with Santiago",
+        "location": [150,-840]
+    },
+    {
+        "id": "A.0",
+        "objective": "Talk to Santiago",
+        "location": [150,-840]
+    },
+    {
+        "id": "A.1",
+        "objective": "Complete the order, talk to Zion for help",
+        "location": [150,-840]
+    },
+    {
+        "id": "A.1.0",
+        "objective": "Complete the order, talk to Zion for help",
+        "location": [150,-840]
+    },
+    {
+        "id": "A.1.1",
+        "objective": "Complete the order, talk to Zion for help",
+        "location": [150,-840]
+    },
+    {
+        "id": "A.1.2",
+        "objective": "Complete the order, talk to Zion for help",
+        "location": [150,-840]
+    },
+    {
+        "id": "A.2",
+        "objective": "Talk to Santiago",
+        "location": [150,-840]
+    },
+    {
+        "id": "5.0",
+        "objective": "Talk to Santiago",
+        "location": [150,-840]
+    },
+    {
+        "id": "5.1",
+        "objective": "Using contraptions, complete the order",
+        "location": [150,-840]
+    },
+    {
+        "id": "5.2",
+        "objective": "Talk with Santiago",
+        "location": [150,-840]
+    },
+    {
+        "id": "5.3",
+        "objective": "Connect sticks to new contraptions with splitter",
+        "location": [150,-840]
+    },
+    {
+        "id": "5.4",
+        "objective": "Talk with Santiago",
+        "location": [150,-840]
+    },
+    {
+        "id": "5.5",
+        "objective": "Fix bugs in the dye factory",
+        "location": [150,-840]
+    },
+    {
+        "id": "5.6",
+        "objective": "Talk with Santiago",
+        "location": [150,-840]
+    },
+    {
+        "id": "5.7",
+        "objective": "Fix bugs in the dye factory",
+        "location": [150,-840]
+    },
+    {
+        "id": "5.8",
+        "objective": "Talk with Santiago",
+        "location": [150,-840]
+    },
+    {
+        "id": "5.9",
+        "objective": "Put colored wool contraption in the chest",
+        "location": [150,-840]
+    },
+    {
+        "id": "6.0",
+        "objective": "Talk with Santiago",
+        "location": [150,-840]
+    },
+    {
+        "id": "6.1",
+        "objective": "Fix the dye factory and construct the wool factory",
+        "location": [150,-840]
+    },
+    {
+        "id": "6.2",
+        "objective": "Fix the dye factory and construct the wool factory",
+        "location": [150,-840]
+    },
+    {
+        "id": "6.3",
+        "objective": "Debug the wool factory",
+        "location": [150,-840]
+    },
+    {
+        "id": "6.4",
+        "objective": "Debug the wool factory",
+        "location": [150,-840]
+    },
+    {
+        "id": "6.5",
+        "objective": "Debug the wool factory",
+        "location": [150,-840]
+    },
+    {
+        "id": "6.6",
+        "objective": "Debug the wool factory",
+        "location": [150,-840]
+    },
+    {
+        "id": "7.0",
+        "objective": "Talk with Serenity",
+        "location": [156,-908]
+    }
+]

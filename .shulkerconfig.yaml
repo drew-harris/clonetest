@@ -1,0 +1,5 @@
+plugin_paths:
+  - ./plugins/Recycler/target/Recycler-1.0-SNAPSHOT.jar
+  - ./plugins/contraption/target/Contraption-1.0-SNAPSHOT.jar
+  - ./plugins/SplitterNode/target/splitter-1.0-SNAPSHOT.jar
+  - ./plugins/HuMInGameLabsPlugin/target/HuMInLabPlugin-1.0-SNAPSHOT.jar

@@ -1,0 +1,28 @@
+version: "3"
+services:
+  server:
+    image: "registry.digitalocean.com/humin-game-lab/mc-server:main"
+    # FOR USE WITH LOCAL DEVELOPMENT
+    # build:
+    #   context: .
+    networks:
+      - mc
+    deploy:
+      mode: replicated
+      replicas: 2
+    stdin_open: true
+    tty: true
+    environment:
+      - MAX_PLAYERS=1
+  # bungee:
+  #   networks:
+  #     - mc
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.bungee
+  #   ports:
+  #     - "25565:25577"
+
+networks:
+  mc:
+    driver: bridge

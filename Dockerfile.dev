@@ -1,0 +1,79 @@
+FROM drewharris/mc-base:latest
+
+WORKDIR /server
+
+ARG base_world_url=https://minecraft-hgl-drew.s3.amazonaws.com/
+ARG world_file_name=world.zip
+ARG conveyor_url=https://minecraft-hgl-drew.s3.amazonaws.com/conveyor.zip
+ARG spigot_url=https://minecraft-hgl-drew.s3.amazonaws.com/spigot.jar
+ARG motd="Local Dev Server"
+
+# Install wget
+RUN apt-get update && apt-get install -y wget
+
+# Install git
+RUN apt-get update && apt-get install -y git
+
+# Install unzip
+RUN apt-get update && apt-get install -y unzip
+
+# Install zsh
+RUN apt-get update && apt-get install -y zsh
+
+# Download spigot.jar
+RUN wget -O ./spigot.jar $spigot_url
+
+EXPOSE 25565/udp
+EXPOSE 25565/tcp
+EXPOSE 25575/tcp
+
+RUN ["java", "-Xms1024M", "-Xmx2048M", "-Dfile.encoding=UTF-8", "-jar", "spigot.jar", "--world-dir", "./worlds", "nogui"]
+
+# Change eula to true
+RUN sed -i 's/false/true/g' eula.txt 
+
+# Set the MOTD in server.properties
+RUN sed -i "s/motd=A Minecraft Server/motd=${motd}/g" server.properties
+
+# Increase max players
+RUN sed -i "s/max-players=20/max-players=100/g" server.properties
+
+
+RUN curl ${conveyor_url} --create-dirs -o ./worlds/world/datapacks/conveyor.zip
+
+
+RUN mkdir ./plugins
+RUN wget -O ./plugins/ProtocolLib.jar "https://github.com/dmulloy2/ProtocolLib/releases/download/5.0.0/ProtocolLib.jar"
+
+ARG voxel_sniper_url=https://minecraft-hgl-drew.s3.amazonaws.com/VoxelSniper-6.1.2.jar
+ARG worldedit_url=https://minecraft-hgl-drew.s3.amazonaws.com/worldedit-bukkit-7.2.14.jar
+ARG edit_tools_enabled
+
+RUN wget -O ./plugins/VoxelSniper.jar $voxel_sniper_url ;
+RUN wget -O ./plugins/worldedit.jar $worldedit_url ; 
+
+COPY ./static /static
+
+ARG install_tmux
+RUN if [ "$install_tmux" = "true" ] ; then \
+    apt-get update && apt-get install -y tmux ; \
+    fi
+
+# Scripts
+COPY ./scripts/ .
+RUN chmod +x dev-entrypoint.sh
+RUN find . -name "*.sh" -exec chmod +x {} \;
+RUN find . -name "*.sh" -exec sed -i 's/\r$//' {} \;
+
+
+COPY ./pom.xml /plugins/pom.xml
+
+# Bust cache to always get fresh world
+ADD "https://www.random.org/cgi-bin/randbyte?nbytes=10&format=h" skipcache
+# Download world files
+RUN curl ${base_world_url}${world_file_name} --create-dirs -o ./worlds/world.zip
+# Unzip world files
+RUN unzip ./worlds/world.zip -d ./worlds/
+
+
+CMD ["/bin/zsh"]

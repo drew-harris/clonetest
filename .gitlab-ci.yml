@@ -1,0 +1,35 @@
+build_server_image:
+  image: docker:20.10.16
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+  services:
+    - docker:20.10.16-dind
+  before_script:
+    - docker login -u $REGISTRY_TOKEN -p $REGISTRY_TOKEN $REGISTRY_URL
+  script:
+    - docker build -t $IMAGE_NAME:latest --build-arg motd="$CI_COMMIT_TITLE" .
+    - docker push $IMAGE_NAME:latest
+# build_watcher:
+#   image: docker:20.10.16
+#   rules:
+#     - if: $CI_COMMIT_BRANCH
+#   services:
+#     - docker:20.10.16-dind
+#   before_script:
+#     - docker login -u $REGISTRY_TOKEN -p $REGISTRY_TOKEN $REGISTRY_URL
+#   script:
+#     - cd backups/program
+#     - docker build -t registry.digitalocean.com/humin-game-lab/watcher:latest --file Dockerfile.watcher .
+#     - docker push registry.digitalocean.com/humin-game-lab/watcher:latest
+#
+# build_worldedit:
+#   image: docker:20.10.16
+#   rules:
+#     - if: $CI_COMMIT_BRANCH
+#   services:
+#     - docker:20.10.16-dind
+#   before_script:
+#     - docker login -u $REGISTRY_TOKEN -p $REGISTRY_TOKEN $REGISTRY_URL
+#   script:
+#     - docker build -t registry.digitalocean.com/humin-game-lab/builder:latest --file Dockerfile.build .
+#     - docker push registry.digitalocean.com/humin-game-lab/builder:latest

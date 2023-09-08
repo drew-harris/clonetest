@@ -1,0 +1,6 @@
+mutation submitLog($input:LogInput!){
+    log(input:$input) {
+        playerId
+        message
+    }
+}

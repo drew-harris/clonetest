@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+  server:
+    network_mode: bridge
+    build:
+      context: .
+      dockerfile: Dockerfile.build
+    ports:
+      - "25565:25565"
+    volumes:
+      - backups:/server/backups
+    stdin_open: true
+    tty: true
+
+  watcher:
+    network_mode: bridge
+    stdin_open: true
+    tty: true
+    # image: golang
+    build:
+      context: ./backups/program/
+      dockerfile: Dockerfile.watcher
+    volumes:
+      - type: bind
+        source: ./backups/program/
+        target: /program
+      - backups:/backups
+    env_file:
+      - ./watcher.env
+
+volumes:
+  backups:

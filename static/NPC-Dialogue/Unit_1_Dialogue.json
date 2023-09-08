@@ -1,0 +1,1109 @@
+[
+    {
+        "id": "T.1",
+        "actor": "U1 Tutorial",
+        "dialog": [
+            "Welcome to Tiny Town!- \n Use the W, A, S, D keys to move and your mouse to look around."
+            ],  
+        "response": ["Ok"],
+        "trigger" : ["T.2"]
+    },
+    {
+        "id": "T.3",
+        "actor": "U1 Tutorial",
+        "dialog": [
+            "You seem to have hit your head pretty hard and lost your memory in the meteor shower, let me show you the ropes so we can start rebuilding tiny town.",
+            "First you need to be able to gather resources \n hold left click while looking at a block to start breaking it \n try breaking the dirt ahead."
+            ],  
+        "response": ["Ok"],
+        "trigger" : ["T.4"]
+    },
+    {
+        "id": "T.5",
+        "actor": "U1 Tutorial",
+        "dialog": [
+            "Great, now that you have broken and picked up the dirt, you can place it down \n press right click to place the block at the position you are looking.",
+            "Place the dirt in front of the observer ahead to open the door"
+            ],  
+        "response": ["Ok"],
+        "trigger" : ["T.6"]
+    },
+    {
+        "id": "T.7",
+        "actor": "U1 Tutorial",
+        "dialog": [
+            "Great job! \n Right clicking also allows you to interact with blocks.",
+            "For instance, a chest! You can right click to open a chest. \n Move items in the chest by clicking on them to pick up and clicking again to put down.",
+            "Pick up items from the \"chest\" grid and put them down in the \"Inventory\" grid to hold them.",
+            "Take the resources out of this chest so we can craft a pickaxe."
+            ],  
+        "response": ["Ok"],
+        "trigger" : ["T.8"]
+    },
+    {
+        "id": "T.9",
+        "actor": "U1 Tutorial",
+        "dialog": [
+            "You can right click crafting tables to craft new items out of resources you have",
+            "Placing items in a specific pattern will let you make them into a new item \n follow the recipe on the wall behind you to make a pickaxe"
+            ],  
+        "response": ["Ok"],
+        "trigger" : ["T.10"]
+    },
+    {
+        "id": "T.11",
+        "actor": "U1 Tutorial",
+        "dialog": [
+            "Breaking blocks does not always drop the block when you finish breaking it. \n Sometimes you need a specific type of tool to get the block once you finish breaking it, for instance use the pickaxe you made to collect this cobblestone",
+            "Pickaxes let you collect stone, granite, and other types of rocks. \nShovels let you collect dirt, sand, and other sediments. \nAxes let you collect all types of wood. \n you can see this in the diagram to your left"            
+            ],  
+        "response": ["Ok"],
+        "trigger" : ["T.12"]
+    },
+    {
+        "id": "T.13",
+        "actor": "U1 Tutorial",
+        "dialog": [
+            "Each of these tools have different versions that become better and better. \n This lets you collect better materials, and the progression is as follows: wood -> stone -> iron -> diamond -> netherite.",
+            "You need a tool made of the previous material to collect the next tier of material. You can see this in the diagram to your right"
+            ],  
+        "response": ["Ok"],
+        "trigger" : ["T.14"]
+    },
+    {
+        "id": "T.15",
+        "actor": "U1 Tutorial",
+        "dialog": [
+            "You can also process materials after you have gathered them by using blocks like furnaces. \n They take fuel in the bottom slot and raw materials in the top slot to output processed materials to the right."
+            ],  
+        "response": ["Ok"],
+        "trigger" : ["T.16"]
+    },
+    {
+        "id": "T.17",
+        "actor": "U1 Tutorial",
+        "dialog": [
+            "The compass lets you know where you need to go for your current task. You can look at the compass in your hand or in the bar at the bottom of the screen and move in the direction it points. \n Try to find which path to take with the compass"
+            ],  
+        "response": ["Ok"],
+        "trigger" : ["T.18"]
+    },
+    {
+        "id": "1.0",
+        "actor": "Serenity",
+        "dialog": [
+            "Welcome to the Tiny Town outpost! My name is Serenity, and I am the supervisor of this outpost.",
+            "You came just in time. We are close to finishing the construction of the Outpost. Once it is finished, we can join and help the other outposts in the large-scale production of beacons.",
+            "You've been hired as an Engineer, and Mayor Goodway hopes you can play a key role in coordinating different tasks. While we are finishing the Outpost, we still need to do our part in helping the community.",
+            "Today, your goal is to collect resources for care packages to help local communities affected by the meteor shower.",
+            "Are you ready to get started?"
+            ],  
+        "response": ["I'm ready to help!"],
+        "trigger" : ["1.0.1"]
+    },
+    {
+        "id": "1.0.1",
+        "actor": "Serenity",
+        "dialog": [
+            "Fantastic! This Outpost is going to be amazing now that you're here!",
+            "Speaking of help, the other outposts are giving us some supplies to start with. The shipments should be here.",
+            "Head to shipping and receiving to find Victoria. They will help you with any shipments coming from outposts, and any that we need to send out. Good luck!"
+            ],  
+        "response": ["Lets get started!"],
+        "trigger" : ["1.1"]
+    },
+    {
+        "id": "1.1",
+        "actor": "Victoria",
+        "dialog": [
+            "Hey there! Glad you could join the team! My name is Victoria, and I manage the shipping and receiving at this outpost. Ever since the last meteor shower, we've been trying to get operations back in order.",
+            "My role is to process all the shipments that come in and out of this outpost into data. That data can help us determine if we have enough resources on hand, and what we need to gather.",
+            "Since I have you here, let me show you the current orders available. You can find them here in the journal.",
+            "Can you look and remind me what the requests are?" 
+        ],  
+        "response": ["Take Journal"],
+        "trigger" : ["1.2"]
+    },
+    {
+        "id": "1.3",
+        "actor": "Victoria",
+        "dialog": [
+            "Oh yes, that's right! Most of those can be made with logs, and then you're left with a few cobblestones. You don't happen to have any of those with you already would you? Check your inventory by pressing 'E.'"
+            ],  
+        "response": ["Lets check!"],
+        "trigger" : ["1.4"]
+    },
+    {
+        "id": "1.4",
+        "actor": "Victoria",
+        "dialog": [
+            "All done? Great! I'd let you use some of the wood from the shipment we got today, but we need that for the construction of the Outpost.",
+            "Head over to the workshop and talk to Zion. They will help you to complete the orders. I'll see you soon!"
+            ],  
+        "response": ["See you soon!"],
+        "trigger" : ["1.6"]
+    },
+    {
+        "id": "1.6",
+        "actor": "Zion",
+        "dialog": [
+            "Hey there, it's always good to see new faces. Serenity mentioned you're starting today. Welcome aboard!",
+            "My name is Zion, and I manage the workshop here at this outpost. I make sure all of our equipment works and everyone follows the safety guidelines.",
+            "Victoria radioed me the tasks you're working on. Gathering materials to make planks, sticks, and axes. You can make the first two by yourself, but for axes you'll need a crafting table Do you know why though?"
+        ],  
+        "response": ["Yes", "No"],
+        "trigger" : ["1.6.1","1.6.2"]
+    },
+    {
+        "id": "1.6.1",
+        "actor": "Zion",
+        "dialog": [
+            "Great! Now how many items can you work with in your inventory versus using a crafting table?"
+        ],
+        "response": ["-4 to 8", "-3 to 9", "-4 to 9", "-3 to 8" ],
+        "trigger" : ["1.6.3", "1.6.3", "1.6.4", "1.6.3"]
+    },
+    {
+        "id": "1.6.2",
+        "actor": "Zion",
+        "dialog": [
+            "In that case, why don't you dead over to the crafting table and compare it with your inventory's crafting table. Check how many items you can work with for both and come back to me when you're done."
+        ],  
+        "response": ["Understood!"],
+        "trigger" : ["1.6.1"]
+    },
+    {
+        "id": "1.6.3",
+        "actor": "Zion",
+        "dialog": [
+            "Close but not quite, why don't you check the crafting table again."
+        ],  
+        "response": ["Try again"],
+        "trigger" : ["1.6.1"]
+    },
+    {
+        "id": "1.6.4",
+        "actor": "Zion",
+        "dialog": [
+            "That's right! You can only craft with 4 items by yourself, while you can craft with 9 items when using the crafting table.",
+            "Now we can start on completing that order. To figure out how to make an item, you can pull up the recipe book in your inventory or in the crafting table.",
+            "To do this, go to your inventory and find the icon at the top right that has both the recipe book and chest together.",
+            "On the left side, you'll see all the recipes you can create with what you have. To see all recipes, click on the toggle on the left side from \"Craftable\" to \"All.\"",
+            "Find the recipe to make an axe. Come back and let me know when you've found it."
+        ],  
+        "response": ["On it!"],
+        "trigger" : ["1.7"]
+    },
+    {
+        "id": "1.7",
+        "actor": "Zion",
+        "dialog": [
+            "You're back! Great! Now what items do we need for the stone axe?"
+        ],  
+        "response": ["-3 sticks and 2 stone", "-2 sticks and 3 stone", "-3 sticks and 3 stone", "-2 sticks and 2 stone"],
+        "trigger" : ["1.7.1","1.8","1.7.1","1.7.1"]
+    },
+    {
+        "id": "1.7.1",
+        "actor": "Zion",
+        "dialog": [
+            "Not quite, why don't you check the recipe book again."
+        ],  
+        "response": ["Try again"],
+        "trigger" : ["1.7"]
+    },
+    {
+        "id": "1.8",
+        "actor": "Zion",
+        "dialog": [
+            "Thats it! Ok, looks like we have some cobblestones you can use, but no sticks. Why don't you look for the stick recipe and come back to me once you've found it."
+        ],  
+        "response": ["Be right back!"],
+        "trigger" : ["1.9"]
+    },
+    {
+        "id": "1.9",
+        "actor": "Zion",
+        "dialog": [
+            "Oh good you're back! Now what items do we need for the stick recipe?"
+        ],  
+        "response": ["- 2 planks", "- 3 planks", "- 1 plank", "- 4 planks"],
+        "trigger" : ["1.10","1.9.1","1.9.1","1.9.1"]
+    },
+    {
+        "id": "1.9.1",
+        "actor": "Zion",
+        "dialog": [
+            "Not quite. Double check the recipe book and come back to me when you've found it."
+        ],  
+        "response": ["Try again"],
+        "trigger" : ["1.9"]
+    },
+    {
+        "id": "1.10",
+        "actor": "Zion",
+        "dialog": [
+            "Correct! Now how many sticks can you get from two planks?"
+        ],  
+        "response": ["-1 stick", "-2 sticks", "-3 sticks", "-4 sticks"],
+        "trigger" : ["1.10.1","1.10.1","1.10.1","1.11"]
+    },
+    {
+        "id": "1.10.1",
+        "actor": "Zion",
+        "dialog": [
+            "Not quite. Double check the recipe book and come back to me when you've found it"
+        ],  
+        "response": ["Try again"],
+        "trigger" : ["1.10.2"]
+    },
+    {
+        "id": "1.10.2",
+        "actor": "Zion",
+        "dialog": [
+            "Great! You're back! Now how many sticks can you get from two planks?"
+        ],  
+        "response": ["-1 stick", "-2 sticks", "-3 sticks", "-4 sticks"],
+        "trigger" : ["1.10.1","1.10.1","1.10.1","1.11"]
+    },
+    {
+        "id": "1.11",
+        "actor": "Zion",
+        "dialog": [
+            "Fantastic! Now how many planks can you make with one log?"
+        ],  
+        "response": ["-4 planks", "-2 planks", "-3 planks", "-1 plank"],
+        "trigger" : ["1.12","1.11.2","1.11.2","1.11.2"]
+    },
+    {
+        "id": "1.11.1",
+        "actor": "Zion",
+        "dialog": [
+            "Great you're back! Now how many planks can you make with one log?"
+        ],  
+        "response": ["-4 planks", "-2 planks", "-3 planks", "-1 plank"],
+        "trigger" : ["1.12","1.11.2","1.11.2","1.11.2"]
+    },
+    {
+        "id": "1.11.2",
+        "actor": "Zion",
+        "dialog": [
+            "Not quite. Double check the recipe book and come back to me when you've found it"
+        ],  
+        "response": ["Try again"],
+        "trigger" : ["1.11.1"]
+    },
+    {
+        "id": "1.12",
+        "actor": "Zion",
+        "dialog": [
+            "Great job! Finally lets put everything together. How many cobblestone and logs do we need to make the four stone axes for the order?"
+        ],  
+        "response": ["-3 stone and 1 log", "-8 stone and 4 logs", "-12 stone and 8 logs", "-12 stone and 1 log"],
+        "trigger" : ["1.12.2","1.12.2","1.12.2","1.12.3"]
+    },
+    {
+        "id": "1.12.1",
+        "actor": "Zion",
+        "dialog": [
+            "Great you're back! Now, how many cobblestone and logs do we need to make the four stone axes for the order?"
+        ],  
+        "response": ["-3 stone and 1 log", "-8 stone and 4 logs", "-12 stone and 8 logs", "-12 stone and 1 log"],
+        "trigger" : ["1.12.2","1.12.2","1.12.2","1.12.3"]
+    },
+    {
+        "id": "1.12.2",
+        "actor": "Zion",
+        "dialog": [
+            "Not quite. You may want to grab a pen and paper to keep track of the items. Take your time and come back to me when you've figured it out."
+        ],  
+        "response": ["Try again"],
+        "trigger" : ["1.12.1"]
+    },
+    {
+        "id": "1.12.3",
+        "actor": "Zion",
+        "dialog": [
+            "Fantastic job! It's important to know how much you need for an order. Now you'll need an axe to complete the order.",
+            "Because of your brilliant thinking here are the resources to make an axe. Go to the workbench and craft one. Come back to me when you're done."
+        ],  
+        "response": ["Be right back!"],
+        "trigger" : ["1.13"]
+    },
+    {
+        "id": "1.14",
+        "actor": "Zion",
+        "dialog": [
+            "Alright, you've made your first stone axe to collect some wood. Remember to go back to Victoria to remind yourself what you're working towards for the day. Also, here, take these."
+        ],  
+        "response": ["Take 3 Chests"],
+        "trigger" : ["1.14.1"]
+    },
+    {
+        "id": "1.14.1",
+        "actor": "Zion",
+        "dialog": [
+            "When you've collected all of the wood for the order, place a chest down in the shipping zone over by shipping and receiving and fill it with the order."
+        ],  
+        "response": ["Understood!"],
+        "trigger" : ["1.15"]
+    },
+    {
+        "id": "1.17",
+        "actor":"Victoria",
+        "dialog": [
+            "Great job fullfilling the orders! You've been a great help! Mayor Goodway wants to speak to you, he should be just outside!"
+            ],  
+        "response": ["See you soon!"],
+        "trigger" : ["1.18"]
+    },
+    {
+        "id": "1.18",
+        "actor": "Mayor Goodway",
+        "dialog": [
+            "I heard that you fulfilled three orders today. That's fantastic! I'm so glad to hire such a talented engineer.",
+            "Please make a simple report to describe what you have done and how you do it as the ending of today Don't worry, I'll give you a report template to help you finish this task. Please go to Canvas to view the format of report."
+        ],  
+        "response": ["End of Lesson 1"],
+        "trigger" : ["0.0"]
+    },
+    {
+        "id": "3.0",
+        "actor": "Serenity",
+        "dialog": [
+            "Hi! Great to see you again! You're on your way to becoming an excellent engineer! Today Victoria is out sick, and we received some orders. Can you make sure they are the expected orders?",
+            "Also, if you find any extra materials, log it so Victoria will know about it and deal with them.",  
+            "Also, we have our own orders we need to send out. Use the materials we just received to complete them. Let Zion know if you need to use any tools to complete the orders."
+            ],  
+        "response": ["Lets get started!"],
+        "trigger" : ["3.1"]
+    },
+    {
+        "id": "3.1",
+        "actor": "Zion",
+        "dialog": [
+            "Hey! Great to see you again! Here are the chests we found in the warehouse. It is hard to find specific items since they are scattered in different chests.", 
+            "Please help organize the chests in a way that we can easily search them."
+        ],  
+        "response": ["On it!"],
+        "trigger" : ["3.2"]
+    },
+    {
+        "id": "3.2",
+        "actor": "Zion",
+        "dialog": [
+            "Done sorting already? Great! Now go fullfill the orders in the shipping zone. You can now use your organized resources to make your job easier!"
+        ],  
+        "response": ["Sure am!", "Not yet"],
+        "trigger" : ["3.2.1", "3.2.2"]
+    },
+    {
+        "id": "3.2.1",
+        "actor": "Zion",
+        "dialog": [
+            "Great! Now go fullfill the orders in the shipping zone. You can now use your organized resources to make your job easier!"
+        ],  
+        "response": ["On it!"],
+        "trigger" : ["3.3"]
+    },
+    {
+        "id": "3.2.2",
+        "actor": "Zion",
+        "dialog": [
+            "No worries! Keep up the good work and come back to me whne you're done!"
+        ],  
+        "response": ["Understood!"],
+        "trigger" : ["3.2"]
+    },
+    {
+        "id": "3.4",
+        "actor": "Zion",
+        "dialog": [
+            "Fantasic job! Thank's for helping us out today! I've got some paperwork to fill out. I look forward to seeing you later!"
+        ],  
+        "response": ["End of lesson 3"],
+        "trigger" : ["0.0"]
+    },
+    {
+        "id": "4.0",
+        "actor": "Serenity",
+        "dialog": [
+            "Hi there, welcome back!  Mayor Goodway hopes to coordinate all outposts in a more effective way to build beacons, and they admire your ability to be an engineer.",
+            "Therefore, they assigned Tiny Town as the coordination center. Now, Zion has reported that we have a bunch of chests at the warehouse, and there are more on the way. Please find Zion; they will help you figure out how to manage the storage."
+            ],  
+        "response": ["Lets get started!"],
+        "trigger" : ["4.1"]
+    },
+    {
+        "id": "4.1",
+        "actor": "Zion",
+        "dialog": [
+            "Hi, welcome back! We have received a lot of chests from the other outposts, and I can provide you some things to manage the chests and make your storage plan.",
+            "Please remember we have a lot of incoming chests later, and make sure your plan can work with all of the chests or have the flexible space for later chests.",
+            "I've written some examples to help you think about how to organize the chests, you'll find those on the wall.",
+            "Lastly, here are some item frames and chests for you use. You can use the items we need to sort as samples for your design. Happy organizing!"
+        ],  
+        "response": ["Lets get to work!"],
+        "trigger" : ["4.2.0"]
+    },
+    {
+        "id": "4.2",
+        "actor": "Zion",
+        "dialog": [
+            "All done with your system?"
+        ],  
+        "response": ["Not quite", "Yes!"],
+        "trigger" : ["4.2.1", "4.2.2"]
+    },
+    {
+        "id": "4.2.1",
+        "actor": "Zion",
+        "dialog": [
+            "No worries! Take as long as you need and come back to me when you're done!"
+        ],  
+        "response": ["Got it!"],
+        "trigger" : ["4.2"]
+    },
+    {
+        "id": "4.2.2",
+        "actor": "Zion",
+        "dialog": [
+            "Fantasic! Now you can use your system to clean out the incoming chests!",
+            "Before that however, what do you think you focused on the most when you were organizing the chests?"
+        ],  
+        "response": ["-Chest Content","-Chest Location","-Classification","-Chest Capacity"],
+        "trigger" : ["4.2.4", "4.2.5", "4.2.6", "4.2.7"]
+    },
+    {
+        "id": "4.2.3",
+        "actor": "Zion",
+        "dialog": [
+            "What do you think you focused on the most when you were organizing the chests?"
+        ],  
+        "response": ["-Chest Content","-Chest Location","-Classification","-Chest Capacity"],
+        "trigger" : ["4.2.4", "4.2.5", "4.2.6", "4.2.7"]
+    },
+    {
+        "id": "4.2.4",
+        "actor": "Zion",
+        "dialog": [
+            "Chest content is a great way to organize the chests. Thank you for your input!",
+            "Now unless you want to change your answer, you can start cleaning out the incoming chests!"
+        ],  
+        "response": ["I want to change my answer","I'm ready to start!"],
+        "trigger" : ["4.2.3", "4.3"]
+    },
+    {
+        "id": "4.2.5",
+        "actor": "Zion",
+        "dialog": [
+            "Chest location is a great way to organize the chests. Thank you for your input!",
+            "Now unless you want to change your answer, you can start cleaning out the incoming chests!"
+        ],  
+        "response": ["I want to change my answer","I'm ready to start!"],
+        "trigger" : ["4.2.3", "4.3"]
+    },
+    {
+        "id": "4.2.6",
+        "actor": "Zion",
+        "dialog": [
+            "Classifcation is a great way to organize the chests. Thank you for your input!",
+            "Now unless you want to change your answer, you can start cleaning out the incoming chests!"
+        ],  
+        "response": ["I want to change my answer","I'm ready to start!"],
+        "trigger" : ["4.2.3", "4.3"]
+    },
+    {
+        "id": "4.2.7",
+        "actor": "Zion",
+        "dialog": [
+            "Chest capacity is a great way to organize the chests. Thank you for your input!",
+            "Now unless you want to change your answer, you can start cleaning out the incoming chests!"
+        ],  
+        "response": ["I want to change my answer","I'm ready to start!"],
+        "trigger" : ["4.2.3", "4.3"]
+    },
+    {
+        "id": "4.3",
+        "actor": "Zion",
+        "dialog": [
+            "Have you finished cleaning out all the recieving chests?"
+        ],  
+        "response": ["Sure have!", "Not yet"],
+        "trigger" : ["4.4.1", "4.4.2"]
+    },
+    {
+        "id": "4.4.1",
+        "actor": "Zion",
+        "dialog": [
+            "Great! Victoria has some orders for you to fulfill. Use this book and your new organization to fulfill the orders."
+        ],  
+        "response": ["On it!"],
+        "trigger" : ["4.5"]
+    },
+    {
+        "id": "4.4.2",
+        "actor": "Zion",
+        "dialog": [
+            "That's okay, we still have time. How about you collaborate with your peers for help?"
+        ],  
+        "response": ["Sure thing!"],
+        "trigger" : ["4.3"]
+    },
+    {
+        "id": "4.6",
+        "actor": "Zion",
+        "dialog": [
+            "Great job fullfilling those orders! Do you think your strategy helped?"
+        ],  
+        "response": ["Yes!", "No"],
+        "trigger" : ["4.6.1", "4.6.2"]
+    },
+    {
+        "id": "4.6.1",
+        "actor": "Zion",
+        "dialog": [
+            "Great! Thank you for helping us build an organization plan! Be sure to share you design with your peers on canvas!"
+        ],  
+        "response": ["End of lesson 4"],
+        "trigger" : ["0.0"]
+    },
+    {
+        "id": "4.6.2",
+        "actor": "Zion",
+        "dialog": [
+            "Interesting. Do you have any ideas on how you could improve your strategy? If so be sure to share your ideas with your peers on canvas!"
+        ],  
+        "response": ["End of lesson 4"],
+        "trigger" : ["0.0"]
+    },
+    {
+        "id":"5.0",
+        "actor": "Serenity",
+        "dialog": [
+            "Hi! Nice to see you again. Thank you for your effort yesterday, but we receive another challenge. The other outposts are shipping a lot of their chests to us. We tried to keep up by using your organization and everyone else's suggestions, but it was not working as well as we expected.",
+            "We need your help to create an encoding system for our organization. An encoding system is where you change the name of an item with a label, and that label serves a particular purpose",
+            "The item is never changed, but the label can change depending on the particular purpose. For us, our purpose is to remember where the item is located and the identity of the item. Please find Victoria, she has some tips for you."
+        ],
+        "response": ["Lets get started!"],
+        "trigger" : ["5.1"]
+    },
+    {
+        "id": "5.1",
+        "actor": "Victoria",
+        "dialog": [
+            "Hey! Great timing. I believe Serenity told you about our challenge for today. I've been working on an encoding system and hope you could help me finish it up.",
+            "To give you an idea of what I am doing, I'll use a library as an example, and how they use an encoding system to organize their books.",
+            "Given the book's author, the year it was published, and the main topic it covers, we can create an encoding label for the book.",
+            "For instance, \"The essential Calvin and Hobbes\" was written by Bill Watterson and published in 2015. This book can be encoded as CWB2015, C is for the type \"comic book,\" WB from the initials of Bill Watterson, and 2015 comes from the year the book was published.",
+            "Come take a look at what I've been working on."
+            ],  
+        "response": ["Lead the way!"],
+        "trigger" : ["5.2"]
+    },
+    {
+        "id": "5.2",
+        "actor": "Victoria",
+        "dialog": [
+            "I was able to get the first aisle done and started on the next few. Look at what I've made and see if you can figure out how I am encoding the items.",
+            "Look at the signs for each aisle and bin. Note their similarities and differences. Come talk to me when you're ready to move on"
+            ],  
+        "response": ["Let's check it out!"],
+        "trigger" : ["5.2.1"]
+    },
+    {
+        "id": "5.2.1",
+        "actor": "Victoria",
+        "dialog": [
+            "How do you think I organized the aisles by?"
+            ],  
+        "response": ["Blast Resistance", "Hardness", "Color", "Size"],
+        "trigger" : ["5.2.2", "5.2.2", "5.2.3", "5.2.2"]
+    },
+    {
+        "id": "5.2.2",
+        "actor": "Victoria",
+        "dialog": [
+            "Not quite, double check the concreate that I used, and how each item in every aisle is different."
+            ],  
+        "response": ["Try again"],
+        "trigger" : ["5.2.1"]
+    },
+    {
+        "id": "5.2.3",
+        "actor": "Victoria",
+        "dialog": [
+            "That right! I've organized each aisle by color."
+            ],  
+        "response": ["Awesome!"],
+        "trigger" : ["5.3"]
+    },
+    {
+        "id": "5.3",
+        "actor": "Victoria",
+        "dialog": [
+            "Did you notice the values I placed on the aisle signs? There should be three values at the bottom. Do you know what that is?"
+            ],  
+        "response": ["Binary", "Digits","RGB","Aisle Number"],
+        "trigger" : ["5.3.1", "5.3.2", "5.3.3", "5.3.2"]
+    },
+    {
+        "id": "5.3.1",
+        "actor": "Victoria",
+        "dialog": [
+            "Outstanding! Yes, the three values are in binary. Coincidently, RGB also uses three values. Thus, 0 means that the color exists, and 1 means the color does not exist"
+            ],  
+        "response": ["Interesting!"],
+        "trigger" : ["5.4"]
+    },
+    {
+        "id": "5.3.2",
+        "actor": "Victoria",
+        "dialog": [
+            "You're close, but not exactly. Think about encoding structures and try again."
+            ],  
+        "response": ["Try again"],
+        "trigger" : ["5.3"]
+    },
+    {
+        "id": "5.3.3",
+        "actor": "Victoria",
+        "dialog": [
+            "Very good! RGB has three values, and I am using binary values to say if the color is there or not. 0 means the color does not exist, while 1 means the color does exist. "
+            ],  
+        "response": ["Interesting!"],
+        "trigger" : ["5.4"]
+    },
+    {
+        "id": "5.4",
+        "actor": "Victoria",
+        "dialog": [
+            "Knowing that, if I gave you an RGB value that is 001, what color do I mean?"
+            ],  
+        "response": ["Red", "Green", "Blue", "Black"],
+        "trigger" : ["5.4.1", "5.4.1", "5.4.2", "5.4.1"]
+    },
+    {
+        "id": "5.4.1",
+        "actor": "Victoria",
+        "dialog": [
+            "Not quite, think about the colors that the letters RGB represent."
+            ],  
+        "response": ["Try again"],
+        "trigger" : ["5.4"] 
+    },
+    {
+        "id": "5.4.2",
+        "actor": "Victoria",
+        "dialog": [
+            "Great job! Remember that the values are in binary, so 0 means the color does not exist, and 1 means the color does exist."
+            ],  
+        "response": ["Awesome!"],
+        "trigger" : ["5.5"] 
+    },
+    {
+        "id": "5.5",
+        "actor": "Victoria",
+        "dialog": [
+            "Now, what color do you think 011 represents?"
+            ],  
+        "response": ["Red", "Magenta", "Blue", "Cyan"],
+        "trigger" : ["5.5.1", "5.5.1", "5.5.1", "5.5.2"]  
+    },
+    {
+        "id": "5.5.1",
+        "actor": "Victoria",
+        "dialog": [
+            "Not quite, think about what colors you get when you mix green and blue."
+            ],  
+        "response": ["Try again"],
+        "trigger" : ["5.5"]  
+    },
+    {
+        "id": "5.5.2",
+        "actor": "Victoria",
+        "dialog": [
+            "Now you're getting a hang of it! Great job! Now, can you make sure that we have 8 aisles, one for each color combination of the RGB encoding that I taught you.",
+            "Make sure that each aisle uses the correct concreate color, a sign at the front of the aisle that labels the aisle number, the color, the RGB values, and 16 large chests. Come talk to me when you're finished."
+            ],  
+        "response": ["I'll get right on it!"],
+        "trigger" : ["5.6"]  
+    },
+    {
+        "id": "5.6",
+        "actor": "Victoria",
+        "dialog": [
+            "Great work! Now, looking at the bins, tell me how I am organizing them."
+            ],  
+        "response": ["Alphabetically", "By Size", "By Shape"],
+        "trigger" : ["5.7.1", "5.7.2", "5.7.2"]  
+    },
+    {
+        "id": "5.7",
+        "actor": "Victoria",
+        "dialog": [
+            "Now, looking at the bins, tell me how I am organizing them."
+            ],  
+        "response": ["Alphabetically", "By Size", "By Shape"],
+        "trigger" : ["5.7.1", "5.7.2", "5.7.2"]  
+    },
+    {
+        "id": "5.7.1",
+        "actor": "Victoria",
+        "dialog": [
+            "Exactly, they are alphabetized, and each aisle has the same item and value."
+            ],  
+        "response": ["Interesting!"],
+        "trigger" : ["5.8"]  
+    },
+    {
+        "id": "5.7.2",
+        "actor": "Victoria",
+        "dialog": [
+            "Not quite, double check the labels on the bins"
+            ],  
+        "response": ["Try again"],
+        "trigger" : ["5.7"]  
+    },
+    {
+        "id": "5.8",
+        "actor": "Victoria",
+        "dialog": [
+            "Did you notice the weird bin values that I used at the end? I wanted to only use one character to represent the digit. This representation is called Hexadecimal.",
+            "Similar to how we can count from zero to nine with one character, we can count from zero to fifteen using one character.",
+            "In decimal, we have [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]. In hexadecimal, we have [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F].",
+            "A means ten, B means eleven, C means twelve, D means thirteen, E means fourteen, and F means fifteen."
+            ],  
+        "response": ["Interesting!"],
+        "trigger" : ["5.9"]  
+    },
+    {
+        "id": "5.9",
+        "actor": "Victoria",
+        "dialog": [
+            "So, if I told you to look in Bin 0, what item am I talking about?"
+            ],  
+        "response": ["Banner","Dye","Leather Pants","Wool"],
+        "trigger" : ["5.9.1", "5.9.2", "5.9.2", "5.9.2"]  
+    },
+    {
+        "id": "5.9.1",
+        "actor": "Victoria",
+        "dialog": [
+            "Correct! Now, if I told you to look in Bin A, what item am I talking about?"
+            ],  
+        "response": ["Lether Tunic","Concrete Power","Bed","Terracotta"],
+        "trigger" : ["5.9.4", "5.9.3", "5.9.3", "5.9.3"]
+    },
+    {
+        "id": "5.9.2",
+        "actor": "Victoria",
+        "dialog": [
+            "Not quite, double check the bins and try again."
+            ],  
+        "response": ["Try again"],
+        "trigger" : ["5.9"]  
+    },
+    {
+        "id": "5.9.3",
+        "actor": "Victoria",
+        "dialog": [
+            "Not quite, double check the bins and try again."
+            ],  
+        "response": ["Try again"],
+        "trigger" : ["5.9.5"]  
+    },
+    {
+        "id": "5.9.4",
+        "actor": "Victoria",
+        "dialog": [
+            "Fantastic! So we have a binary color and a hexadecimal item to represent our encoding system. For example 000A means a black leather tunic, 1115 means a white concrete powder, and 1011 means a magenta bed. Now it's your turn! "
+            ],  
+        "response": ["Let's do it!"],
+        "trigger" : ["5.10"]  
+    },
+    {
+        "id": "5.9.5",
+        "actor": "Victoria",
+        "dialog": [
+            "Now, if I told you to look in Bin A, what item am I talking about"
+            ],  
+        "response": ["Lether Tunic","Concrete Power","Bed","Terracotta"],
+        "trigger" : ["5.9.4", "5.9.3", "5.9.3", "5.9.3"]  
+    },
+    {
+        "id": "5.10",
+        "actor": "Victoria",
+        "dialog": [
+            "What does 0000 mean?"
+            ],  
+        "response": ["White Shulker Box","Yellow Wool","Magenta Dye","Black Banner"],
+        "trigger" : ["5.10.2", "5.10.2", "5.10.2", "5.10.1"]  
+    },
+    {
+        "id": "5.10.1",
+        "actor": "Victoria",
+        "dialog": [
+            "Correct! Ready for the next one?"
+            ],  
+        "response": ["Let's do it!"],
+        "trigger" : ["5.10.3"]  
+    },
+    {
+        "id": "5.10.2",
+        "actor": "Victoria",
+        "dialog": [
+            "Incorrect, try again."
+            ],
+        "response": ["Try again"],
+        "trigger" : ["5.10"]  
+    },
+    {
+        "id": "5.10.3",
+        "actor": "Victoria",
+        "dialog": [
+            "What does 100F mean?"
+            ],  
+        "response": ["Black Bed","Red Wool","Green Firework Star","White Terracotta"],
+        "trigger" : ["5.10.5", "5.10.4", "5.10.5", "5.10.5"]  
+    },
+    {
+        "id": "5.10.4",
+        "actor": "Victoria",
+        "dialog": [
+            "Correct! You're really getting a hang of this!"
+            ],  
+        "response": ["Thanks!"],
+        "trigger" : ["5.11"]  
+    },
+    {
+        "id": "5.10.5",
+        "actor": "Victoria",
+        "dialog": [
+            "Incorrect, try again."
+            ],
+        "response": ["Try again"],
+        "trigger" : ["5.10.3"]  
+    },
+    {
+        "id": "5.11",
+        "actor": "Victoria",
+        "dialog": [
+            "Great work! Finish up the aisles with the signs for all the bins. After that, we can finally get this place organized. Come talk to me when you're ready to organize our inventory."
+            ],
+        "response": ["I'll get right on it!"],
+        "trigger" : ["5.11.1"]  
+    },
+    {
+        "id": "5.11.1",
+        "actor": "Victoria",
+        "dialog": [
+            "All done finishing the encoding system?"
+            ],
+        "response": ["Yes!","No"],
+        "trigger" : ["5.12", "5.11.2"]  
+    },
+    {
+        "id": "5.11.2",
+        "actor": "Victoria",
+        "dialog": [
+            "No worries! Take your time and analyze the patterns."
+            ],
+        "response": ["Ok"],
+        "trigger" : ["5.11.1"]  
+    },
+    {
+        "id": "5.12",
+        "actor": "Victoria",
+        "dialog": [
+            "Great! Now it's time to get organized! Go gather the incoming shipments. When logging the items, use the encoding label I thought you to note what came in and the quantity.",
+            "For example, if we got 10 black banners, then log '0000 - 10'. Then place the item in it's appropriate aisle and bin. Here's a notepad to log all your work! Come see me when you're finished."
+            ],
+        "response": ["Sounds good!"],
+        "trigger" : ["5.12.1"]  
+    },
+    {
+        "id": "5.12.1",
+        "actor": "Victoria",
+        "dialog": [
+            "You're back! All done recording or do you need some help?"
+            ],
+        "response": ["All done!","I need help"],
+        "trigger" : ["5.12.3", "5.12.2"]  
+    },
+    {
+        "id": "5.12.2",
+        "actor": "Victoria",
+        "dialog": [
+            "Remember to use the RGB values and the hexadecimal position of the item. Here are some examples: \"0001 x3\" means 3 black beds, \"1115 x2\" means 2 white concrete powder, and \"011F x1\" means 1 cyan wool. Come see me when you're done."
+            ],
+        "response": ["Ok"],
+        "trigger" : ["5.12.1"]  
+    },
+    {
+        "id": "5.12.3",
+        "actor": "Victoria",
+        "dialog": [
+            "Great! The last thing I have for you is a shipping request. Find these items in our storage and put them in the chest to my right. Come see me when you're done."
+            ],
+        "response": ["Right away!"],
+        "trigger" : ["5.13"]  
+    },
+    {
+        "id": "5.14",
+        "actor": "Victoria",
+        "dialog": [
+            "Great work for the day! I'm glad we were able to get this encoding system to work. We will keep this going and see if we can organize everything that comes our way. Thank you for your help today"
+            ],
+        "response": ["End of Lesson 5"],
+        "trigger" : ["0.0"]  
+    },
+    {
+        "id": "6.0",
+        "actor": "Serenity",
+        "dialog": [
+            "Hi, good to see you again! Thank you for building a great storage system for Tiny Town. Mayor Goodway loves the design to classify items and resources by colors. However, Victoria met another issue. She's asked for you help, please go find her."
+            ],
+        "response": ["On my way!"],
+        "trigger" : ["6.1"]
+    },
+    {
+        "id": "6.1",
+        "actor": "Victoria",
+        "dialog": [
+            "Hey there! I found that my initial storage system design can't address incoming chests from all outposts. We need to revise our system, so I started to design new encoding rule to revise the current storage system. ",
+            "However, I met some more issues. Please help me to solve them. Your goal is to revise the encoding theme (remove the collisions) to make it work.",
+            "Here's a list of items and resourceswe have based on the chests in shipment area. I created labels for them. Could you figure out the rule for labels?"
+            ],
+        "response": ["Lets see!"],
+        "trigger" : ["6.2"]
+    },
+    {
+        "id": "6.2",
+        "actor": "Victoria",
+        "dialog": [
+            "What do you think the rule to the label is?"
+            ],
+        "response": ["Item Color", "Outpost code", "First letter of item name"],
+        "trigger" : ["6.2.1","6.2.1","6.3"]
+    },
+    {
+        "id": "6.2.1",
+        "actor": "Victoria",
+        "dialog": [
+            "Thats not it, but thats okay. You have time to figure it out when solving the puzzles."
+            ],
+        "response": ["OK"],
+        "trigger" : ["6.3"]
+    },
+    {
+        "id": "6.3",
+        "actor": "Victoria",
+        "dialog": [
+            "Great! Please review this list, can you find the problems?"
+            ],
+        "response": ["Take list"],
+        "trigger" : ["6.4"]
+    },
+    {
+        "id": "6.4",
+        "actor": "Victoria",
+        "dialog": [
+            "What issue did you find in this list?"
+            ],
+        "response": ["The labels don't include color code", "The labels don't include outpost code", "There are repeated labels"],
+        "trigger" : ["6.4.1", "6.4.1", "6.5" ]
+    },
+    {
+        "id": "6.4.1",
+        "actor": "Victoria",
+        "dialog": [
+            "Sorry, thats not it. Please take a close look at the label, some labels look like very similar."
+            ],
+        "response": ["Try again"],
+        "trigger" : ["6.4" ]
+    },
+    {
+        "id": "6.5",
+        "actor": "Victoria",
+        "dialog": [
+            "Great job! That's the issue I need your help because repeated labels will cause confusion when our staff only can read the labels.",
+            "Please pick one of two puzzles to solve to help me to revise the encoding rule."
+            ],
+        "response": ["Puzzle 1", "Puzzle 2"],
+        "trigger" : ["6.6.A", "6.6.B"]
+    },
+    {
+        "id": "6.6.A",
+        "actor": "Victoria",
+        "dialog": [
+            "Using the space around you, edit the labels in the jounral. Talk to me when you think you've solved the puzzle!"
+            ],
+        "response": ["On it!"],
+        "trigger" : ["6.7"]
+    },
+    {
+        "id": "6.6.B",
+        "actor": "Victoria",
+        "dialog": [
+            "Using the journal and the space around you, edit the labels. Talk to me when you think you've solved the puzzle!"
+            ],
+        "response": ["On it!"],
+        "trigger" : ["6.7"]
+    },
+    {
+        "id": "6.7",
+        "actor": "Victoria",
+        "dialog": [
+            "Hey! Have you found an answer to the puzzle yet?"
+            ],
+        "response": ["Sure have!", "Not yet!"],
+        "trigger" : ["6.8", "6.7"]
+    },
+    {
+        "id": "6.8",
+        "actor": "Victoria",
+        "dialog": [
+            "Are you sure you're ready to move on?"
+            ],
+        "response": ["Absolutly!", "Actually, I need more time"],
+        "trigger" : ["6.9", "6.7"]
+    },
+    {
+        "id": "6.9",
+        "actor": "Victoria",
+        "dialog": [
+            "Good job! I know you can help us to solve the problem. To check your solution does work, here is a list of more items and resources. Please check if your solution also works for it."
+            ],
+        "response": ["On it!"],
+        "trigger" : ["6.10"]
+    },
+    {
+        "id": "6.10",
+        "actor": "Victoria",
+        "dialog": [
+            "Done checking your work already? Did it work as expected?"
+            ],
+        "response": ["Yes", "No"],
+        "trigger" : ["6.11, 6.10.0"]
+    },
+    {
+        "id": "6.10.0",
+        "actor": "Victoria",
+        "dialog": [
+            "It's reasonable to spend more time on solving this problem. Try to focus on which property can solve the collisions."
+            ],
+        "response": ["Okay!"],
+        "trigger" : ["6.10"]
+    },
+    {
+        "id": "6.11",
+        "actor": "Victoria",
+        "dialog": [
+            "Great job! You found the solution for us! You can continue to solve another puzzle or help your peers."
+            ],
+        "response": ["End of lesson 6"],
+        "trigger" : ["0.0"]
+    }
+]
+

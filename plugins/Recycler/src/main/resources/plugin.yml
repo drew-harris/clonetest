@@ -1,0 +1,10 @@
+name: Recycler
+version: '${project.version}'
+main: alexpet.recycler.Recycler
+api-version: 1.19
+authors: [ AlexPetmecky ]
+commands:
+  giverblocks:
+    description: Give stored recycler blocks
+    usage: /<command>
+    ailiases: getR

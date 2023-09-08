@@ -1,0 +1,5 @@
+name: Splitter
+version: '${project.version}'
+main: alexpet.splitter.Splitter
+api-version: 1.19
+authors: [ Alex_Petmecky ]

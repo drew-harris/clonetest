@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  dev-server:
+    build:
+      context: .
+      args:
+        - edit_tools_enabled=true # Change to true to enable WorldEdit and VoxelSniper
+        - install_tmux=true
+      dockerfile: Dockerfile.dev
+    ports:
+      - "25565:25565"
+    volumes:
+      - type: bind
+        source: ./plugins
+        target: /plugins/plugins
+      - type: bind
+        source: ./libraries
+        target: /plugins/libraries
+      - type: bind
+        source: ./static
+        target: /static
+      # - type: bind
+      #   source: ./world
+      #   target: /server/worlds/world/
+    stdin_open: true
+    tty: true

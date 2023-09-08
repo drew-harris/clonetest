@@ -1,0 +1,59 @@
+//destination is the x y z coordinate for the dest region. Use the lowest x,y,z values for the dest. This will be the bottom NorthWest corner of the dest region
+//https://www.digminecraft.com/game_commands/clone_command.php
+//
+//REQUIRED:
+// begin:       Starting x y z coordinate for the source region to clone (ie: first corner block).
+// end:         Ending x y z coordinate for the source region to clone (ie: opposite corner block).
+// dest: Use the lowest x,y,z values for the destination. This will be the bottom NorthWest corner of the dest region
+
+
+[
+    {
+        "name": "Sorting three orders",
+        "unit":"1",
+        "id": "3.0",
+        "begin": "131 65 -872",
+        "end": "120 62 -882",
+        "dest": "117 70 -881"
+    },
+    {
+        "name": "Custom Chest Sorting",
+        "unit":"1",
+        "id": "4.0",
+        "begin": "122 59 -827",
+        "end": "127 62 -810",
+        "dest": "122 70 -827"
+    },
+    {
+        "name": "Encoding System",
+        "unit":"1",
+        "id": "5.0",
+        "begin": "134 52 -836",
+        "end": "114 56 -821",
+        "dest": "111 71 -826"
+    },
+    {
+        "name": "Completed Encoding System",
+        "unit":"1",
+        "id": "6.0",
+        "begin": "130 44 -833",
+        "end": "111 48 -818",
+        "dest": "111 71 -826"
+    },
+    {
+        "name": "Podiums",
+        "unit":"2",
+        "id": "2.0",
+        "begin": "117 48 -886",
+        "end": "128 43 -877",
+        "dest": "119 70 -878"
+    },
+    {
+        "name": "U2L4 Factory",
+        "unit":"2",
+        "id": "4.0",
+        "begin": "116 59 -825",
+        "end": "114 61 -821",
+        "dest": "126 71 -823"
+    }
+]

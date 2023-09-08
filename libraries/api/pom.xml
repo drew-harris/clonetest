@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>api</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <parent>
+        <relativePath>../../pom.xml</relativePath>
+        <groupId>com.humingamelab.mc</groupId>
+        <artifactId>parent-server</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <name>api</name>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.github.aoudiamoncef</groupId>
+                <artifactId>apollo-client-maven-plugin</artifactId>
+                <version>7.0.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <services>
+                                <example-api>
+                                    <introspection>
+                                        <enabled>true</enabled>
+                                        <endpointUrl>https://lapis.drewh.net/query</endpointUrl>
+                                        <connectTimeoutSeconds>10</connectTimeoutSeconds>
+                                        <readTimeoutSeconds>10</readTimeoutSeconds>
+                                        <writeTimeoutSeconds>10</writeTimeoutSeconds>
+                                        <useSelfSignedCertificat>false</useSelfSignedCertificat>
+                                        <useGzip>false</useGzip>
+                                        <prettyPrint>false</prettyPrint>
+                                    </introspection>
+                                    <compilationUnit>
+                                        <name>service</name>
+                                        <compilerParams>
+                                            <schemaPackageName>com.humingamelab.mc.Client</schemaPackageName>
+                                            <scalarsMapping>
+                                                <Time>
+                                                    <targetName>java.time.ZonedDateTime</targetName>
+                                                    <expression>new com.humingamelab.mc.api.TimeAdapter()</expression>
+                                                </Time>
+                                                <Map>
+                                                    <targetName>java.util.HashMap</targetName>
+                                                    <expression>new com.humingamelab.mc.api.MapAdapter()</expression>
+                                                </Map>
+                                            </scalarsMapping>
+                                        </compilerParams>
+                                    </compilationUnit>
+                                </example-api>
+                            </services>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>sonatype</id>
+            <url>https://oss.sonatype.org/content/groups/public/</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.apollographql.apollo3</groupId>
+            <artifactId>apollo-runtime</artifactId>
+            <version>3.8.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.apollographql.apollo3</groupId>
+            <artifactId>apollo-api-jvm</artifactId>
+            <version>3.8.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.apollographql.apollo3</groupId>
+            <artifactId>apollo-rx3-support</artifactId>
+            <version>3.8.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.reactivex.rxjava3</groupId>
+            <artifactId>rxjava</artifactId>
+            <version>3.1.6</version>
+        </dependency>
+    </dependencies>
+</project>

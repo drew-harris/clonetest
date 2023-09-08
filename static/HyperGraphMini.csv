@@ -1,0 +1,9 @@
+minecraft:iron_pickaxe,1,0,0,0,0,0,0,0,0,0
+minecraft:iron_ingot,-3,1,0,0,0,0,0,-1,0,0
+minecraft:stick,-2,0,4,1,0,0,0,0,0,0
+minecraft:oak_planks,0,0,-2,0,4,0,0,0,0,0
+minecraft:oak_log,0,0,0,0,-1,0,0,0,0,0
+minecraft:bamboo,0,0,0,-2,0,0,0,0,0,0
+minecraft:iron_nugget,0,-9,0,0,0,0,0,9,0,0
+minecraft:furnace,0,0,0,0,0,0,0,0,1,0
+minecraft:cobblestone,0,0,0,0,0,0,0,0,-8,0

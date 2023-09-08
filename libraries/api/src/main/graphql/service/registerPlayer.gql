@@ -1,0 +1,7 @@
+mutation registerPlayer($name: String!) {
+    registerPlayer(input: {name: $name}) {
+        name
+        id
+        createdAt
+    }
+}

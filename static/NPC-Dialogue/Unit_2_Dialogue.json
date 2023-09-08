@@ -1,0 +1,504 @@
+[
+    {
+        "id": "T.1",
+        "actor": "U2 Tutorial",
+        "dialog": [
+            "Welcome back! Now we are going to teach you about the different components you will use in your factory in this unit"
+            ],  
+        "response": ["Ok"],
+        "trigger" : ["T.2"]
+    },
+    {
+        "id": "T.2",
+        "actor": "U2 Tutorial",        
+        "dialog": [
+            "This is a hopper, it moves items put in the top of it, from chests or items thrown in, to a chest below it. Try throwing the block that's in the chest into the top of the hopper, and see it go back into the chest."
+            ],  
+        "response": ["Let's try it out"],
+        "trigger" : ["T.3"]
+    },
+    {
+        "id": "T.4",
+        "actor": "U2 Tutorial",
+        "dialog": [
+            "Next up is the contraption. To start, first you need to interact with a dropper. This will open a menu for you to create a contraption.",
+            "In this menu, the left is where you put the materials you want to use and the right is where you put item you want to make. Add redstone to power and finish creating your contraption. If your input and output is a valid recipe then you will get a contraption block!"
+            ],  
+        "response": ["Lets try it out"],
+        "trigger" : ["T.5"]
+    },
+    {
+        "id": "T.6",
+        "actor": "U2 Tutorial",
+        "dialog": [
+            "Great! Now you have a construction block. Here's a book that will help teach you how to set it up and some resources to get started!"
+            ],  
+        "response": ["Ok"],
+        "trigger" : ["T.7"]
+    },
+    {
+        "id": "T.8",
+        "actor": "U2 Tutorial",
+        "dialog": [
+            "Next up is conveyor belts. Items will move in the direction that the arrow on the magenta glazed terracotta block points. Go ahead to the next room and play with this conveyor belt to see how it works"
+            ],  
+        "response": ["Ok"],
+        "trigger" : ["T.9"]
+    },
+    {
+        "id": "T.10",
+        "actor": "U2 Tutorial",
+        "dialog": [
+            "The last component we have in this tutorial is the Recycler. This block allows you to turn any item into its crafting components.",
+            "To use the recycler, simply put the item you want to recycle into the machine, and use a button to dispense the crafting materials.", 
+            "In front of you there is a chest the instructions to make the recycler and some items to recycle."
+            ],  
+        "response": ["Ok"],
+        "trigger" : ["T.11"]
+    },
+    {
+        "id": "T.12",
+        "actor": "U2 Tutorial",
+        "dialog": [
+            "Great job! You're ready to get started on your own factory! See you in Tiny Town!"
+            
+            ],  
+        "response": ["End of Tutorial"],
+        "trigger" : ["0.0"]
+    },
+    
+    {
+        "id": "2.0",
+        "actor": "Victoria",
+        "dialog": [
+            "Hey! Welcome back! Did you hear the good news? Tiny Town is officially online! We can now join the rest of the outposts and produce goods for everyone! That means more responsibilities for our crew.",
+            "As you see, your storage system organizes incoming resources very well. But now that we are online, we will receive not only orders to send out but resources to produce.",
+            "To help with our new responsibilities, the research team has been finalizing the designs of the contraptions. The purpose of the contraption is to create items automatically.",
+            "You'll have to program the contraption as to what it's making, but once set, it'll continue to produce items as long as it has the right inputs.",
+            "You can even chain together contraptions to create complex items automatically. Here are some orders to figure out which item will need automation."
+        ],  
+        "response": ["Let's get started!"],
+        "trigger" : ["2.1"]
+    },
+    {
+        "id": "2.1",
+        "actor": "Victoria",
+        "dialog": [
+            "If you're ready, please put your choices in the chest. You can produce your answer by using crating table."
+        ],  
+        "response": ["Got it!"],
+        "trigger" : ["2.2"] 
+    },
+    {
+        "id": "2.2",
+        "actor": "Victoria",
+        "dialog": [
+            "Remember, place the two raw materials you think will be needed to automate the production of the item in the chest. Don't forget to check the crafting table for recipies."
+        ],  
+        "response": ["Thanks!"],
+        "trigger" : ["2.3"]
+    },
+    {
+        "id": "2.3",
+        "actor": "Victoria",
+        "dialog": [
+            "Remember, place the two raw materials you think will be needed to automate the production of the item in the chest. Don't forget to check the crafting table for recipies."
+        ],  
+        "response": ["Thanks!"],
+        "trigger" : ["2.3"]
+    },
+    {
+        "id": "2.4",
+        "actor": "Victoria",
+        "dialog": [
+            "Good job! You found the correct critical items to do automation within orders. Now head to canvas to learn how to automate the production of items."
+        ],  
+        "response": ["End of Lesson 2"],
+        "trigger" : ["0.0"]
+    },
+    {
+        "id": "3.0",
+        "actor": "Santiago",
+        "dialog": [
+            "Hi there! Based on your decision to automate crafting planks and sticks, the research team built three contraptions. But they forgot to label them!",
+            "Two of the contraptions are basic and only automate one recipe. The third contraption is a compound contraption, which combines recipes.",
+            "Tiny Town only has enough electricity to run two contraptions. Out of the three contraptions, which two could most efficiently produce all the items we need to fulfill out orders?",
+            "Place the contraption(s) we don't need in the chest next to me. If you need help, find Zion."
+        ],  
+        "response": ["Let's get started!"],
+        "trigger" : ["3.1"]
+    },
+    {
+        "id": "3.1",
+        "actor": "Zion",
+        "dialog": [
+            "Hey! Santiago said you're trying to figure out the new contraptions. Have you tried using the recycler? You can use it to undo crafting.",
+            "It only un-crafts one recipe at a time, so you might need to run an item through it multiple times to output raw materials.",
+            "Here's two chests with supplies you can use for testing the recycler and contraptions."
+        ],  
+        "response": ["Thanks for the help!"],
+        "trigger" : ["3.1.1"]
+    },
+    {
+        "id": "3.1.1",
+        "actor": "Zion",
+        "dialog": [
+            "In order to build the recycler, place this piece of bedrock into the dispenser and press the button. Then shift-right click the hopper with the item frame to place it onto the hopper and place the recycler block into the item frame."
+        ],  
+        "response": ["Thanks for the help!"],
+        "trigger" : ["3.1.1"]
+    },
+    {
+        "id": "3.2",
+        "actor": "Santiago",
+        "dialog": [
+            "Hey! Now that you've learned how to use the recycler, let's figure out the contraptions!"
+        ],  
+        "response": ["On it!"],
+        "trigger" : ["3.2.1"]
+    },
+    {
+        "id": "3.2.1",
+        "actor": "Santiago",
+        "dialog": [
+            "Hi! You figured out what the contraptions do?"
+        ],  
+        "response": ["Not yet", "Yes!"],
+        "trigger" : ["3.2.2","3.2.3"]
+    },
+    {
+        "id": "3.2.2",
+        "actor": "Santiago",
+        "dialog": [
+            "No worries, take as much time as you need!"
+        ],  
+        "response": ["Thanks!"],
+        "trigger" : ["3.2.1"]
+    },
+    {
+        "id": "3.2.3",
+        "actor": "Santiago",
+        "dialog": [
+            "Great! Tiny Town only has enough electricity to run two contraptions. Out of the three contraptions, which two could most efficiently produce all the items we need to fulfill out orders?",
+            "Place the contraption we don't need in the chest next to me"
+        ],  
+        "response": ["Ok"],
+        "trigger" : ["3.3"]
+    },
+    {
+        "id": "3.3",
+        "actor": "Santiago",
+        "dialog": [
+            "It doesn't seem like the correct combination is in the chest yet. Why don't you take another look?"
+        ],  
+        "response": ["Sure thing!"],
+        "trigger" : ["3.3"]
+    },
+    {
+        "id": "3.4",
+        "actor": "Santiago",
+        "dialog": [
+            "Fantasitc job! You figured out the correct combination of contraptions to automate the production of items. Now head to canvas to learn how to program the contraptions."
+        ],  
+        "response": ["End of lesson 3"],
+        "trigger" : ["0.0"]
+    },
+
+    {
+        "id": "4.0",
+        "actor": "Victoria",
+        "dialog": [
+            "Hi there! Did you see the announcement? Tiny Town needs to build a dye factory to produce dyes for the new outpost encoding system. We decided to use seven colors: Yellow, Red, Blue, Green, Cyan, Purple, and Orange.",
+            "Please find Zion; he will give you the raw materials and necessary tools to produce basic dyes."
+        ],  
+        "response": ["Let's get started!"],
+        "trigger" : ["4.1"]
+    },
+    {
+        "id": "4.1",
+        "actor": "Zion",
+        "dialog": [
+            "Hey! The raw materials for crafting dyes are in this chest, and there's a furnace nearby for crafting.",
+            "You can find the recipes for Dye in the Recipe Book using the crafting table or the MFP. Some dyes are made from flowers, while others are made by mixing dyes.",
+            "Your first task is to create the seven dyes. Serenity made a list and put them in the chest next to me."
+        ],  
+        "response": ["Let's take a look!"],
+        "trigger" : ["4.2"]
+    },
+    {
+        "id": "4.3",
+        "actor": "Zion",
+        "dialog": [
+            "Great job making those dyes! Since we need to produce a lot of dyes for the new encoding system, we'd like to automate this process. Please find Santiago; he will tell you how to build the contraptions."
+        ],  
+        "response": ["On my way!"],
+        "trigger" : ["4.4"]
+    },
+    {
+        "id": "4.4",
+        "actor": "Santiago",
+        "dialog": [
+            "Hey! So you need to make contraptions? You'll need to use the contraption builder over here. As a reminder, you must supply one redstone to power a contraption.",
+            "I can only give you 5 redstone today, but that should be plenty to experiment with. If you need more redstones, you must recycle one of your contraptions to get a redstone back.",
+            "With our limited redstones, think about which dyes we should automate with the contraption? Work the problem out using the contraption buildier or the MFP. When you have an answer, put your contraptions in the chest next to me and let me know."
+        ],  
+        "response": ["On it!"],
+        "trigger" : ["4.5"]
+    },
+    {
+        "id": "4.5",
+        "actor": "Santiago",
+        "dialog": [
+            "Remember, put the contraptions you think will be needed to automate the production of the dyes in the chest next to me. If you need help, be sure to ask your teacher or peers."
+        ],  
+        "response": ["Got it!"],
+        "trigger" : ["4.5"]
+    },
+    
+    {
+        "id": "4.6",
+        "actor": "Santiago",
+        "dialog": [
+            "Great! I see you put three contrpations in! Are these the three you want to automate?"
+        ],  
+        "response": ["Yes!", "Not yet"],
+        "trigger" : ["4.7","4.5"]
+    },
+    {
+        "id": "4.7",
+        "actor": "Santiago",
+        "dialog": [
+            "Fantastic job today! That's all the work I have for you today, thanks you for your help!"
+        ],  
+        "response": ["End of lesson 4"],
+        "trigger" : ["0.0"]
+    },
+
+    {
+        "id": "A.0",
+        "actor": "Santiago",
+        "dialog": [
+            "Hey! Great seeing you again! I have a new task for you today. In the chest next to me is a new order. Using contraption blocks I need you to automate the production of the items in the order.",
+            "The catch is that we only have oak logs to work with. Be sure to use the MFP for refrence. Once you have all the items in the order, place them AND the contraptions you used in the chest next to me.",
+            "If you need any more oak logs or redstone, come see me and I can give you more. Good luck!"
+
+        ],  
+        "response": ["Thanks!"],
+        "trigger" : ["A.1"]
+    },
+    {
+        "id": "A.1",
+        "actor": "Santiago",
+        "dialog": [
+            "Hey, need any more oak logs or redstone? If you're done, be sure to place the order and contraption blocks in the chest next to me."
+
+        ],  
+        "response": ["Oak logs", "Redstone"],
+        "trigger" : ["A.1.1","A.1.2"]
+    },
+    {
+        "id": "A.1.0",
+        "actor": "Santiago",
+        "dialog": [
+            "Hey, need any more oak logs or redstone? If you're done, be sure to place the order and contraption blocks in the chest next to me."
+
+        ],  
+        "response": ["Oak logs", "Redstone"],
+        "trigger" : ["A.1.1","A.1.2"]
+    },
+
+    
+    {
+        "id": "A.2",
+        "actor": "Santiago",
+        "dialog": [
+            "Great job! That's all we have left for you today, thanks for all your help!"
+
+        ],  
+        "response": ["End of Lesson 5"],
+        "trigger" : ["0.0"]
+    },
+    {
+        "id": "5.4",
+        "actor": "Santiago",
+        "dialog": [
+            "Great job! One more factory is still shutdown. This second factory is using the dye contraptions you made yesterday to make different colored banners. The only flowers we have are Poppy, Dandelion, Cornflower, and Cactus",
+            "Remember, you can use the recycler and MFP to find the error."
+
+        ],  
+        "response": ["Ok"],
+        "trigger" : ["5.5"]
+    },
+    {
+        "id": "5.6",
+        "actor": "Santiago",
+        "dialog": [
+            "Good catch, thanks! Unfortunately, the factory still isn't working. Is there another error?",
+            "Remember, you can use the recycler and MFP to find the error."
+
+        ],  
+        "response": ["Ok"],
+        "trigger" : ["5.7"]
+    },
+    {
+        "id": "5.8",
+        "actor": "Santiago",
+        "dialog": [
+            "Good job! You fix all of the problems! Victoria told me that we need to produce dyed banners for the other outposts. I'll talk to the night crew to make the factory overnight. For now, can you help me get started by making only the dyed wool contraptions?",
+            "Remember, we only have these 7 dyes to work with: Red, Orange, Yellow, Green, Cyan, Blue, and Purple. We just want to make one banner per color.",
+            "I put some supplies you may need in the chest here. When you're done, put the dyed wool contraptions you made in the same chest. Look over the recipe book if you need a refresher on how to make Banners."
+
+        ],  
+        "response": ["Ok"],
+        "trigger" : ["5.9"]
+    },
+    {
+        "id": "6.0",
+        "actor": "Santiago",
+        "dialog": [
+            "Hey! The night crew updated the dye factory, but it seems that something went wrong. Can you take a look at the factory? If there is an error, please fix it.",
+            "Remember, we need dyed wool for every outpost. 7 colors total: red, green, blue, yellow, purple, cyan, and orange. And we need 60 wools for each color.",
+            "Please store needed dyed wool in the chest next to me. I suggest you use MFP to build a factory blueprint first."
+
+        ],  
+        "response": ["Ok"],
+        "trigger" : ["6.1"]
+    },
+    {
+        "id": "6.1",
+        "actor": "Santiago",
+        "dialog": [
+            "Hey! All done setting up the wool factory?"
+
+        ],  
+        "response": ["No", "Yes"],
+        "trigger" : ["6.2", "6.3"]
+    },
+    {
+        "id": "6.2",
+        "actor": "Santiago",
+        "dialog": [
+            "No worries, take your time. Be sure to use the MFP to help with your planning process."
+        ],  
+        "response": ["Ok"],
+        "trigger" : ["6.1"]
+    },
+    {
+        "id": "6.3",
+        "actor": "Santiago",
+        "dialog": [
+            "Great job! I'll give you some raw materials (flowers) to test if the whole factory works correctly or not."
+        ],  
+        "response": ["Thanks!"],
+        "trigger" : ["6.4"]
+    },
+    {
+        "id": "6.4",
+        "actor": "Santiago",
+        "dialog": [
+            "Back already? Did your factory work as intended?"
+        ],  
+        "response": ["No","Yes"],
+        "trigger" : ["6.5", "6.6"]
+    },
+    {
+        "id": "6.5",
+        "actor": "Santiago",
+        "dialog": [
+            "No worires, go back and review your design. Be sure to use the MFP for help!"
+        ],  
+        "response": ["Ok"],
+        "trigger" : ["6.4"]
+    },
+    {
+        "id": "6.6",
+        "actor": "Santiago",
+        "dialog": [
+            "Great job! That's all the work I have for you today! Thanks for your help!"
+        ],  
+        "response": ["End of Lesson 6"],
+        "trigger" : ["0.0"]
+    },
+    {
+        "id": "7.0",
+        "actor": "Serenity",
+        "dialog": [
+            "Hey, nice to see you again! Other outposts plan to build dormitory for their workers, so they need beds and more banners. Could you go find Zion and help him update the factories?"
+        ],  
+        "response": ["Sure thing!"],
+        "trigger" : ["7.1"]
+    },
+    {
+        "id": "7.1",
+        "actor": "Santiago",
+        "dialog": [
+            "Hi, we now need to produce beds and banners in the seven outpost colors. Can you please add on to the factories so that they craft dyed beds and dyed banners?",
+            "Check the recipe book and use MFP to create a model of the factory you need. Here are some supplies you may need."
+        ],  
+        "response": ["Ok"],
+        "trigger" : ["7.2"]
+    },
+    {
+        "id": "7.2",
+        "actor": "Santiago",
+        "dialog": [
+            "All done setting up the bed and banner factories?"
+        ],  
+        "response": ["No", "Yes"],
+        "trigger" : ["7.3","7.4"]
+    },
+    {
+        "id": "7.3",
+        "actor": "Santiago",
+        "dialog": [
+            "Take your time. Be sure to refrence the recipe book and use the MFP to help with your planning process."
+        ],  
+        "response": ["Ok"],
+        "trigger" : ["7.2"]
+    },
+    {
+        "id": "7.4",
+        "actor": "Santiago",
+        "dialog": [
+            "Great job! Here are the raw materials to produce dyed banners and beds. Please test your factories and check that they are crafting the correct items. Check back in with me when you're done."
+        ],  
+        "response": ["Ok"],
+        "trigger" : ["7.5"]
+    },
+    {
+        "id": "7.5",
+        "actor": "Santiago",
+        "dialog": [
+            "Did your design work?"
+        ],  
+        "response": ["No", "Yes"],
+        "trigger" : ["7.6","7.7"]
+    },
+    {
+        "id": "7.6",
+        "actor": "Santiago",
+        "dialog": [
+            "I suggest using MFP to build a blueprint first, then reconnect your factories. If you already built a blueprint in MFP, double check your blueprint then check the connections between factories"
+        ],  
+        "response": ["Ok"],
+        "trigger" : ["7.5"]
+    },
+    {
+        "id": "7.7",
+        "actor": "Santiago",
+        "dialog": [
+            "You did it! Here are the raw materials to produce all the dyed banners and beds ordered by other outposts. Please store the items you produce in chests next to me."
+        ],  
+        "response": ["On it!"],
+        "trigger" : ["7.8"]
+    },
+    {
+        "id": "7.9",
+        "actor": "Santiago",
+        "dialog": [
+            "Fantasitc job! That's all the work I have for you today! Thanks for your help!"
+        ],  
+        "response": ["End of lesson 7"],
+        "trigger" : ["0.0"]
+    }
+]

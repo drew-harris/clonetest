@@ -1,0 +1,7 @@
+FROM maven:3.9.2-eclipse-temurin-17
+
+ARG patched_build_tools_url=https://minecraft-hgl-drew.s3.amazonaws.com/BuildTools.jar
+
+RUN curl ${patched_build_tools_url} --create-dirs -o ./BuildTools.jar
+
+RUN java -jar BuildTools.jar --rev 1.19.4 --remapped
