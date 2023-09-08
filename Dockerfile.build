@@ -8,7 +8,7 @@ WORKDIR /server
 ARG base_world_url=https://minecraft-hgl-drew.s3.amazonaws.com/
 # ARG world_file_name=backup-2023-8-3--02-22.zip
 ARG world_file_name=backup.zip
-ARG spigot_url=https://minecraft-hgl-drew.s3.amazonaws.com/spigot.jar
+ARG spigot_url=https://minecraft-hgl-drew.s3.amazonaws.com/spigot-1.20.1.jar
 ARG worldedit_url=https://minecraft-hgl-drew.s3.amazonaws.com/worldedit-bukkit-7.2.14.jar
 ARG voxel_sniper_url=https://minecraft-hgl-drew.s3.amazonaws.com/VoxelSniper-6.1.2.jar
 ARG motd="Build Server"
